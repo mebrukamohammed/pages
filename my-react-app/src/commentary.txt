@@ -1,0 +1,56 @@
+modules give class in a hash to remove naming conflicsts
+external,modules and inline styling 
+styles={
+    color:"";
+
+}
+modules need to be imported
+props read only properties in which parent components can send data to children components using key value pair
+<component key:value/>
+conditional rendering
+updater functions in setState are useful because they use pending ques 
+setCount(c=>c+1)
+Hook
+ ↓
+gives your function component a React ability
+
+useEffectHook = to do some code when a component rerenders , when it mounts and when the value changes 
+useEffect(()=> {},[]) when it mounts
+          ()=>{} every time it rerenders and mounts 
+          ()={},[a,b] everytime when the value of a and b changes.
+          useState controls data.
+
+useEffect handles things that happen because of that data/render.
+useContext hook= to pass data without using props === props drilling
+provider component 
+import createContext
+export const userContext=createContext();
+wrap any children component with in this special provider component
+consumer context
+value passed inside provider component is used for any child components
+useRef is used to avoid re-rendering of components when its not necessary and when the value changes
+when accessing Dom elements ,handling focus,transitions
+managing timers and intervals
+
+
+stopwatch program how can i use useRef?
+named export and default export in named export use []
+
+
+URL
+ ↓
+React Router
+ ↓
+Which component should be displayed?
+routes =holdes your routes
+route =one component
+Link from the user navigate between routes
+<BrowserRouter>
+<App/>
+</BrowserRouter  == this allows it to manage every routing process inside my app
+<Routes>
+<Route path="/" element={<home />}/> if url is / display home
+<Home /> is a react element
+<Link> tells where to go
+<Route> when we reach there display it.
+
